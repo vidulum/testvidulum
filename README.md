@@ -18,6 +18,9 @@ testvidulumd start --p2p.persistent_peers e7ef78bb156f04f667e4a23a0782e4b1bb6731
 
 - [Testnet Explorer](https://testnet-explorer.vidulum.app)
 
+- [Testnet Faucet](https://vidulum.app/testnet-faucet)
+
+- [Vidulum App](https://wallet.vidulum.app)
 
 ### Notes - Work in Progress
 ```
