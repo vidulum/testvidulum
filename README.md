@@ -11,7 +11,11 @@ copy genesis.json to .testvidulum/config/genesis.json
 testvidulumd start --p2p.persistent_peers e7ef78bb156f04f667e4a23a0782e4b1bb673165@216.128.150.25:26656,b9361329891f1acda1f93e55f73642736759e5bb@66.42.124.230:26656
 
 1,000,000 uTVDL == 1 TVDL
+
 ```
+
+- [Testnet Explorer](https://testnet-explorer.vidulum.app)
+
 
 ### Notes - Work in Progress
 ```
