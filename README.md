@@ -4,6 +4,12 @@
 
 ## Get started
 
+```
+Download release
+copy genesis.json to .testvidulum/config/
+testvidulumd start --p2p.persistent_peers e7ef78bb156f04f667e4a23a0782e4b1bb673165@216.128.150.25:26656,b9361329891f1acda1f93e55f73642736759e5bb@66.42.124.230:26656
+```
+
 ## Release
 
 To release a new version of your blockchain, create and push a new tag with `v` prefix. A new draft release with the configured targets will be created.
