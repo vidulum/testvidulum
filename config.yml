@@ -1,0 +1,67 @@
+build:
+  binary: "testvidulumd"
+accounts:
+  - name: testaccount1
+    coins: ["1000000000utvdl"]
+    address: testvdl18cftwx6j253tnmceykk7u8efmd4p670vfy0m9t
+  - name: testaccount2
+    coins: ["1000000000utvdl"]
+    address: testvdl1drv5ah3sk5x9q7nxep64xwtztn6tnhxyjfsh44
+  - name: testaccount3
+    coins: ["1000000000utvdl"]
+    address: testvdl14my3q9whzzsnpcgf8cx3vpw9mal6utwehzgune
+  - name: faucet
+    coins: ["1000000000000utvdl"]
+    address: testvdl1ey0q0zdddhkgp63fgwlpddac8ykdx5g5rh0rly
+validator:
+  name: testaccount1
+  staked: "10000000utvdl"
+client:
+  openapi:
+    path: "docs/static/openapi.yml"
+  vuex:
+    path: "vue/src/store"
+
+genesis:
+  chain_id: "testvidulum-1"
+  app_state:
+    crisis:
+      constant_fee:
+        amount: "1000"
+        denom: "utvdl"
+    distribution:
+      params:
+        community_tax: "0.050000000000000000"
+    gov:
+      deposit_params:
+        max_deposit_period: "7200s"
+        min_deposit:
+          - amount: "100000000"
+            denom: "utvdl"
+      voting_params:
+        voting_period: "86400s"
+      tally_params:
+        quorum: "0.334000000000000000"
+        threshold: "0.500000000000000000"
+        veto_threshold: "0.334000000000000000"
+    mint:
+      minter:
+        annual_provisions: "0.000000000000000000"
+        inflation: "0.130000000000000000"
+      params:
+        blocks_per_year: "6307200"
+        goal_bonded: "0.100000000000000000"
+        inflation_max: "0.000000000000000001"
+        inflation_min: "0.000000000000000001"
+        inflation_rate_change: "0.130000000000000000"
+        mint_denom: "utvdl"
+    staking:
+      params:
+        bond_denom: "utvdl"
+    slashing:
+      params:
+        downtime_jail_duration: "600s"
+        min_signed_per_window: "0.100000000000000000"
+        signed_blocks_window: "10000"
+        slash_fraction_double_sign: "0.050000000000000000"
+        slash_fraction_downtime: "0.000100000000000000"
