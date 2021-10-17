@@ -5,12 +5,14 @@
 ##  Quick Start
 
 ```
-Download release
+- Ubuntu 21.04 (Recommended)
+- 1,000,000 uTVDL == 1 TVDL
+
+
+// Download release
 mv testvidulumd /usr/local/bin/testvidulumd
 copy genesis.json to .testvidulum/config/genesis.json
 testvidulumd start --p2p.persistent_peers e7ef78bb156f04f667e4a23a0782e4b1bb673165@216.128.150.25:26656,b9361329891f1acda1f93e55f73642736759e5bb@66.42.124.230:26656
-
-1,000,000 uTVDL == 1 TVDL
 
 ```
 
@@ -19,7 +21,7 @@ testvidulumd start --p2p.persistent_peers e7ef78bb156f04f667e4a23a0782e4b1bb6731
 
 ### Notes - Work in Progress
 ```
-    - * Ubuntu 21.04
+    
     - wget https://github.com/vidulum/testvidulum/releases/download/v1.0/testvidulum_linux_amd64.tar.gz
     - tar -xf testvidulum_linux_amd64.tar.gz && mv testvidulumd /usr/local/bin/
     - mkdir .testvidulum && mkdir .testvidulum/config && cd .testvidulum/config
@@ -67,6 +69,24 @@ testvidulumd tx staking create-validator \
 --gas-adjustment "1.5" \
 --gas-prices "0.025utvdl" \
 --broadcast-mode block
+```
+
+### Delegate additional (self-delegation) to your validator
+```
+testvidulumd tx staking delegate testvdlvaloper..... 5000utvdl \
+--from EXAMPLE \
+--chain-id testvidulum-1 \
+--keyring-backend os
+```
+
+### Edit validator
+```
+testvidulumd tx staking edit-validator \
+--details "Corey's testnet validator" \
+--website "https://vidulum.app" \
+--from EXAMPLE \
+--chain-id testvidulum-1 \
+--keyring-backend os
 ```
 
 ## Release
