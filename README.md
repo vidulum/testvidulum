@@ -9,7 +9,7 @@
 - Download latest release and unzip it
 - Move `testvidulumd` to `/usr/local/bin/`
 - Download `genesis.json` into `.testvidulum/config/` (create the folders beforehand)
-- Start the daemon (u will need peers the first time u start)
+- Start the daemon (you will need peers the first time you start)
 
 ---
 
@@ -57,7 +57,7 @@ testvidulumd keys add EXAMPLE
 ```sh
 testvidulumd q bank balances ADDRESS
 ```
-- List existing validators (So you can decide where u want to delegate your coins for staking)
+- List existing validators (So you can decide where you want to delegate your coins for staking)
 ```sh
 testvidulumd q staking validators
 ```
@@ -99,27 +99,6 @@ testvidulumd tx staking delegate OPERATOR_ADDRESS 5000utvdl --from EXAMPLE --cha
 ```sh
 testvidulumd tx staking edit-validator --moniker "Corey's Validator" --details "Corey's testnet validator" --website "https://vidulum.app" --from EXAMPLE --chain-id testvidulum-1 --keyring-backend os
 ```
-
-## Release
-
-To release a new version of your blockchain, create and push a new tag with `v` prefix. A new draft release with the configured targets will be created.
-
-```sh
-git tag v0.1
-git push origin v0.1
-```
-
-After a draft release is created, make your final changes from the release page and publish it.
-
-### Install
-
-To install the latest version of your blockchain node's binary, execute the following command on your machine:
-
-```sh
-curl https://get.starport.network/vidulum/testvidulum@latest! | sudo bash
-```
-
-`vidulum/testvidulum` should match the `username` and `repo_name` of the Github repository to which the source code was pushed. Learn more about [the install process](https://github.com/allinbits/starport-installer).
 
 ## Learn more
 
