@@ -1,6 +1,6 @@
 {
-  "genesis_time": "2021-10-07T16:22:48.587951Z",
-  "chain_id": "testvidulum-1",
+  "genesis_time": "2022-10-14T16:22:48.587951Z",
+  "chain_id": "testvidulum-2",
   "initial_height": "1",
   "consensus_params": {
     "block": {
@@ -45,6 +45,13 @@
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "testvdl1qzds6mt4d8ej8yuw22as8cnle6qexfq9592pz9",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
           "address": "testvdl14my3q9whzzsnpcgf8cx3vpw9mal6utwehzgune",
           "pub_key": null,
           "account_number": "0",
@@ -53,6 +60,13 @@
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
           "address": "testvdl1ey0q0zdddhkgp63fgwlpddac8ykdx5g5rh0rly",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "testvdl1m4flsv93sms6gcpf3q58zmq46hg3n7a2gvxx3w",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
@@ -66,6 +80,15 @@
       },
       "balances": [
         {
+          "address": "testvdl17sy5tkm2747r6df248yf2s5y4rjs4yfsynhnl9",
+          "coins": [
+            {
+              "denom": "utvdl",
+              "amount": "100000000"
+            }
+          ]
+        },
+        {
           "address": "testvdl1drv5ah3sk5x9q7nxep64xwtztn6tnhxyjfsh44",
           "coins": [
             {
@@ -75,16 +98,7 @@
           ]
         },
         {
-          "address": "testvdl1ey0q0zdddhkgp63fgwlpddac8ykdx5g5rh0rly",
-          "coins": [
-            {
-              "denom": "utvdl",
-              "amount": "1000000000000"
-            }
-          ]
-        },
-        {
-          "address": "testvdl18cftwx6j253tnmceykk7u8efmd4p670vfy0m9t",
+          "address": "testvdl1qzds6mt4d8ej8yuw22as8cnle6qexfq9592pz9",
           "coins": [
             {
               "denom": "utvdl",
@@ -93,11 +107,29 @@
           ]
         },
         {
-          "address": "testvdl14my3q9whzzsnpcgf8cx3vpw9mal6utwehzgune",
+          "address": "testvdl1kyfnalwzj2hdedy3wteuwn5taht0wh2hjrpqjw",
           "coins": [
             {
               "denom": "utvdl",
-              "amount": "1000000000"
+              "amount": "100000000"
+            }
+          ]
+        },
+        {
+          "address": "testvdl1gyxx3gk87utf86gj5fpcv0nh24yywp8xdagcch",
+          "coins": [
+            {
+              "denom": "utvdl",
+              "amount": "100000000"
+            }
+          ]
+        },
+        {
+          "address": "testvdl1m4flsv93sms6gcpf3q58zmq46hg3n7a2gvxx3w",
+          "coins": [
+            {
+              "denom": "utvdl",
+              "amount": "100000000"
             }
           ]
         }
@@ -125,7 +157,7 @@
       "params": {
         "base_proposer_reward": "0.010000000000000000",
         "bonus_proposer_reward": "0.040000000000000000",
-        "community_tax": "0.020000000000000000",
+        "community_tax": "0.20000000000000000",
         "withdraw_addr_enabled": true
       },
       "previous_proposer": "",
@@ -148,69 +180,15 @@
               {
                 "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
                 "description": {
-                  "moniker": "test_validator_1",
+                  "moniker": "test-2",
                   "identity": "",
-                  "website": "https://vidulum.app",
+                  "website": "",
                   "security_contact": "",
-                  "details": "First validator on Vidulums testnet"
+                  "details": "test-2"
                 },
                 "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "min_self_delegation": "1",
-                "delegator_address": "testvdl18cftwx6j253tnmceykk7u8efmd4p670vfy0m9t",
-                "validator_address": "testvdlvaloper18cftwx6j253tnmceykk7u8efmd4p670vtzr46x",
-                "pubkey": {
-                  "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "hueLqmJRIYB31Y4OPC+Q8j7Os+EXRLu/S7plmVfKT/4="
-                },
-                "value": { "denom": "utvdl", "amount": "10000000" }
-              }
-            ],
-            "memo": "e7ef78bb156f04f667e4a23a0782e4b1bb673165@216.128.150.25:26656",
-            "timeout_height": "0",
-            "extension_options": [],
-            "non_critical_extension_options": []
-          },
-          "auth_info": {
-            "signer_infos": [
-              {
-                "public_key": {
-                  "@type": "/cosmos.crypto.secp256k1.PubKey",
-                  "key": "A8tfHxy9Lm+u0C3n1bJzHTeZbZTeLlkVaa3vW8e4zKHc"
-                },
-                "mode_info": { "single": { "mode": "SIGN_MODE_DIRECT" } },
-                "sequence": "0"
-              }
-            ],
-            "fee": {
-              "amount": [],
-              "gas_limit": "200000",
-              "payer": "",
-              "granter": ""
-            }
-          },
-          "signatures": [
-            "0kz53UVFT4jouiCEaQcfWs5y2Cga4sgnxYubPcQl68sgvirfcYkGnx0dcFFQPSfVyN/ahMFeqrXvBryTGAvkDA=="
-          ]
-        },
-        {
-          "body": {
-            "messages": [
-              {
-                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
-                "description": {
-                  "moniker": "test_validator_2",
-                  "identity": "",
-                  "website": "https://vidulum.app",
-                  "security_contact": "",
-                  "details": "Second validator on Vidulums testnet"
-                },
-                "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
+                  "rate": "0.010000000000000000",
+                  "max_rate": "0.010000000000000000",
                   "max_change_rate": "0.010000000000000000"
                 },
                 "min_self_delegation": "1",
@@ -220,7 +198,10 @@
                   "@type": "/cosmos.crypto.ed25519.PubKey",
                   "key": "rMIxgGGvXI+BNa4ZAGniGmXH2IkFswS9W41OiX0LkrM="
                 },
-                "value": { "denom": "utvdl", "amount": "10000000" }
+                "value": {
+                  "denom": "utvdl",
+                  "amount": "300000000"
+                }
               }
             ],
             "memo": "164293e7ef3a6d765c0993287c66e5e8942de2fb@107.191.49.96:26656",
@@ -235,7 +216,11 @@
                   "@type": "/cosmos.crypto.secp256k1.PubKey",
                   "key": "A0Kj3WqJlUXQpoRQQAh12bpa79xvXXDaq2lvF1lDHIaC"
                 },
-                "mode_info": { "single": { "mode": "SIGN_MODE_DIRECT" } },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
                 "sequence": "0"
               }
             ],
@@ -247,7 +232,7 @@
             }
           },
           "signatures": [
-            "GAvuad16ubQfsdf+4zIPetsGMglyq5NZ43o8BnoLilEQfuk2CLTPB+8i4TUHFbjFip4bLKu3aFzTDwV9yD5NJw=="
+            "544oumhab7Nwsyd/AqHDfcugil97yt5zXkyWxnNlZq1gO/u1+Wy4lRTQA9ilP/ikcjtXfRMeD38Wasg9QO6dbw=="
           ]
         },
         {
@@ -256,28 +241,31 @@
               {
                 "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
                 "description": {
-                  "moniker": "test_validator_3",
+                  "moniker": "test-4",
                   "identity": "",
-                  "website": "https://vidulum.app",
+                  "website": "",
                   "security_contact": "",
-                  "details": "Third validator on Vidulums testnet"
+                  "details": "test-4"
                 },
                 "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
+                  "rate": "0.010000000000000000",
+                  "max_rate": "0.010000000000000000",
                   "max_change_rate": "0.010000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "testvdl14my3q9whzzsnpcgf8cx3vpw9mal6utwehzgune",
-                "validator_address": "testvdlvaloper14my3q9whzzsnpcgf8cx3vpw9mal6utwe4yyjv5",
+                "delegator_address": "testvdl1qzds6mt4d8ej8yuw22as8cnle6qexfq9592pz9",
+                "validator_address": "testvdlvaloper1qzds6mt4d8ej8yuw22as8cnle6qexfq9krx0ag",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "hozazVwEvSkQ4YUy2IjxhbJDnHcfL3VggQAHXqQC/XY="
+                  "key": "OblFvkmblEXqRr8eaJQhvsNyrMs/f9+nQVEf6TjtDe0="
                 },
-                "value": { "denom": "utvdl", "amount": "10000000" }
+                "value": {
+                  "denom": "utvdl",
+                  "amount": "100000000"
+                }
               }
             ],
-            "memo": "b9361329891f1acda1f93e55f73642736759e5bb@66.42.124.230:26656",
+            "memo": "ff4aaa3232428fde5847a72c1aac21b3a5708975@45.63.59.69:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -287,9 +275,13 @@
               {
                 "public_key": {
                   "@type": "/cosmos.crypto.secp256k1.PubKey",
-                  "key": "Aw9u2slxllvtxijuQrCmzYcMDw4z9bRknYPsd8ZsbQIl"
+                  "key": "AvdhZT2HLGcv+ZOY9Atf9kY4CltkFYSxdnoGqHtK2Qny"
                 },
-                "mode_info": { "single": { "mode": "SIGN_MODE_DIRECT" } },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
                 "sequence": "0"
               }
             ],
@@ -301,17 +293,17 @@
             }
           },
           "signatures": [
-            "KVIX7bYZC42IjELfdm+U49j3mu2AX6zj55EvbmNaz+ZuaCt+IXHee9/B+NO10NFQsXMDbmbNKBqR2EjcEiXiXg=="
+            "AyuXL6bv9OccXbUmZigI1IzkFsz6yDmygybelvZx0xoywisWDZRVucZBPeyixq3LH2KcIbAh4eJbJpFclytD9g=="
           ]
         }
       ]
     },
     "gov": {
       "deposit_params": {
-        "max_deposit_period": "7200s",
+        "max_deposit_period": "720s",
         "min_deposit": [
           {
-            "amount": "100000000",
+            "amount": "10000000",
             "denom": "utvdl"
           }
         ]
@@ -362,14 +354,14 @@
     "mint": {
       "minter": {
         "annual_provisions": "0.000000000000000000",
-        "inflation": "0.130000000000000000"
+        "inflation": "0.010000000000000000"
       },
       "params": {
         "blocks_per_year": "6307200",
-        "goal_bonded": "0.100000000000000000",
-        "inflation_max": "0.000000000000000001",
-        "inflation_min": "0.000000000000000001",
-        "inflation_rate_change": "0.130000000000000000",
+        "goal_bonded": "0.05000000000000000",
+        "inflation_max": "0.01",
+        "inflation_min": "0.01",
+        "inflation_rate_change": "1.0",
         "mint_denom": "utvdl"
       }
     },
@@ -395,7 +387,7 @@
         "historical_entries": 10000,
         "max_entries": 7,
         "max_validators": 100,
-        "unbonding_time": "1814400s"
+        "unbonding_time": "360s"
       },
       "redelegations": [],
       "unbonding_delegations": [],
@@ -414,4 +406,3 @@
     "vesting": {}
   }
 }
-
