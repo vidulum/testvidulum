@@ -10,7 +10,7 @@ COVERAGE ?= coverage.txt
 BUILDDIR ?= $(CURDIR)/build
 LEDGER_ENABLED ?= true
 
-ldflags = -X github.com/cosmos/cosmos-sdk/version.Name=testvidulum-1 \
+ldflags = -X github.com/cosmos/cosmos-sdk/version.Name=testvidulum-2 \
 	-X github.com/cosmos/cosmos-sdk/version.ServerName=testvidulumd \
 	-X github.com/cosmos/cosmos-sdk/version.Version=$(VERSION) \
 	-X github.com/cosmos/cosmos-sdk/version.Commit=$(COMMIT)
